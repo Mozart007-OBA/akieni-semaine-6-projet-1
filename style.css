@@ -1,0 +1,93 @@
+/* ==========================================================================
+   MAMBO CONGO - Style Sheet
+   Projet HTML5 & CSS3 Pur (Sans Framework, Sans JavaScript)
+   Akieni Academy - Phase 2 (HTML, CSS & Git)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES & PALETTE DE COULEURS
+   -------------------------------------------------------------------------- */
+:root {
+  /* Charte Graphique */
+  --primary-color: #C84B23;       /* Terre de Sienne / Ocre Congolais */
+  --primary-hover: #A93B18;
+  --secondary-color: #0F4C3A;     /* Vert Émeraude Profond */
+  --secondary-light: #16644D;
+  --accent-color: #D89B2B;        /* Or Solaire */
+  --accent-light: #FFF4DC;
+  
+  /* Couleurs Neutres */
+  --text-dark: #1C1917;
+  --text-muted: #57534E;
+  --bg-body: #FAFAF7;
+  --bg-card: #FFFFFF;
+  --bg-alt: #F3F1EA;
+  --border-color: #E7E5E0;
+  
+  /* Retours Visuels */
+  --success-color: #15803D;
+  --success-bg: #DCFCE7;
+
+  /* Typographie */
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Ombres & Bordures */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition: all 0.3s ease;
+}
+
+/* --------------------------------------------------------------------------
+   2. RÉINITIALISATION & STYLES DE BASE
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-body);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--text-dark);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
