@@ -585,3 +585,47 @@ ul {
   font-weight: 600;
   color: var(--text-muted);
 }
+
+/* --------------------------------------------------------------------------
+   9. STATISTIQUES & ABOUT
+   -------------------------------------------------------------------------- */
+.about-checklist {
+  margin: 1.5rem 0 2rem 0;
+}
+
+.about-checklist li {
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.about-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.stat-box {
+  background-color: var(--bg-body);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
