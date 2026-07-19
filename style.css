@@ -477,3 +477,28 @@ ul {
   margin-bottom: 0;
 }
 
+/* --------------------------------------------------------------------------
+   7. PAGE BANNER (SERVICES & CONTACT)
+   -------------------------------------------------------------------------- */
+.page-banner {
+  background-color: var(--secondary-color);
+  color: #FFFFFF;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.page-banner h1 {
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-banner p {
+  color: #E7E5E0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.05rem;
+}
+
