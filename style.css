@@ -810,3 +810,71 @@ details.faq-item p {
   font-weight: 600;
   border: 1px solid rgba(216, 155, 43, 0.3);
 }
+
+/* --------------------------------------------------------------------------
+   13. MEDIA QUERIES (RESPONSIVE DESIGN 2 BREAKPOINTS)
+   -------------------------------------------------------------------------- */
+
+/* Breakpoint 1 : Tablette (< 992px) */
+@media (max-width: 992px) {
+  .grid-2, .grid-3, .grid-4,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Breakpoint 2 : Mobile (< 768px) */
+@media (max-width: 768px) {
+  .top-bar-list {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  /* Affichage du bouton burger */
+  .menu-btn {
+    display: flex;
+  }
+
+  /* Activation du menu mobile via CSS hack */
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    display: none;
+  }
+
+  .menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
