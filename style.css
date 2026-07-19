@@ -707,3 +707,49 @@ textarea.form-control {
   min-height: 120px;
 }
 
+
+/* --------------------------------------------------------------------------
+   11. ACCORDION FAQ PURE HTML (<details> / <summary>)
+   -------------------------------------------------------------------------- */
+details.faq-item {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+}
+
+summary.faq-question {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  outline: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+summary.faq-question::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+details[open] summary.faq-question::after {
+  content: "−";
+}
+
+details.faq-item p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
